@@ -19,10 +19,10 @@ package pathdb
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/triedb/database"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common/hexutil"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/triedb/database"
 )
 
 // The types of locations where the node is found.

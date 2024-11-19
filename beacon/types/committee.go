@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/DoModond/go-ethereum/beacon/params"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common/hexutil"
 	bls "github.com/protolambda/bls12-381-util"
 )
 
@@ -39,7 +39,7 @@ type SerializedSyncCommittee [SerializedSyncCommitteeSize]byte
 // jsonSyncCommittee is the JSON representation of a sync committee.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
 type jsonSyncCommittee struct {
 	Pubkeys   []hexutil.Bytes `json:"pubkeys"`
 	Aggregate hexutil.Bytes   `json:"aggregate_pubkey"`
@@ -140,7 +140,7 @@ func (s *SerializedSyncCommittee) Deserialize() (*SyncCommittee, error) {
 // SyncCommittee is a set of sync committee signer pubkeys and the aggregate key.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
 type SyncCommittee struct {
 	keys      [params.SyncCommitteeSize]*bls.Pubkey
 	aggregate *bls.Pubkey
@@ -170,7 +170,7 @@ func (sc *SyncCommittee) VerifySignature(signingRoot common.Hash, signature *Syn
 // to a subset of the corresponding sync committee.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/beacon-chain.md#syncaggregate
 type SyncAggregate struct {
 	Signers   [params.SyncCommitteeBitmaskSize]byte `gencodec:"required" json:"sync_committee_bits"`
 	Signature [params.BLSSignatureSize]byte         `gencodec:"required" json:"sync_committee_signature"`

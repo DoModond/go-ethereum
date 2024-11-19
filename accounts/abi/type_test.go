@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/DoModond/go-ethereum/common"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
 )
 
 // typeWithoutStringer is an alias for the Type type which simply doesn't implement

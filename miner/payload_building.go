@@ -23,19 +23,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/beacon/engine"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/beacon/engine"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common/hexutil"
+	"github.com/DoModond/go-ethereum/core/stateless"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/rlp"
 )
 
 // BuildPayloadArgs contains the provided parameters for building payload.
 // Check engine-api specification for more details.
-// https://github.com/ethereum/execution-apis/blob/main/src/engine/cancun.md#payloadattributesv3
+// https://github.com/DoModond/execution-apis/blob/main/src/engine/cancun.md#payloadattributesv3
 type BuildPayloadArgs struct {
 	Parent       common.Hash           // The parent block to build payload on top
 	Timestamp    uint64                // The provided timestamp of generated payload

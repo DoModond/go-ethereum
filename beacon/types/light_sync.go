@@ -20,10 +20,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/common"
-	ctypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/beacon/merkle"
+	"github.com/DoModond/go-ethereum/beacon/params"
+	"github.com/DoModond/go-ethereum/common"
+	ctypes "github.com/DoModond/go-ethereum/core/types"
 )
 
 // HeadInfo represents an unvalidated new head announcement.
@@ -57,7 +57,7 @@ func (c *BootstrapData) Validate() error {
 // sync committee root.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
 type LightClientUpdate struct {
 	AttestedHeader          SignedHeader  // Arbitrary header out of the period signed by the sync committee
 	NextSyncCommitteeRoot   common.Hash   // Sync committee of the next period advertised in the current one
@@ -159,7 +159,7 @@ func (h *HeaderWithExecProof) Validate() error {
 // It also proves the belonging execution payload header with a Merkle proof.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
 type OptimisticUpdate struct {
 	Attested HeaderWithExecProof
 	// Sync committee BLS signature aggregate
@@ -192,7 +192,7 @@ func (u *OptimisticUpdate) Validate() error {
 // the finalized beacon header with Merkle proofs.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientfinalityupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientfinalityupdate
 type FinalityUpdate struct {
 	Attested, Finalized HeaderWithExecProof
 	FinalityBranch      merkle.Values

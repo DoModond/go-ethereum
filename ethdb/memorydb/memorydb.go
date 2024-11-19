@@ -24,8 +24,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/ethdb"
 )
 
 var (

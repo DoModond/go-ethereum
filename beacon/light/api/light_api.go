@@ -28,13 +28,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/DoModond/go-ethereum/beacon/merkle"
+	"github.com/DoModond/go-ethereum/beacon/params"
+	"github.com/DoModond/go-ethereum/beacon/types"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common/hexutil"
+	"github.com/DoModond/go-ethereum/log"
 	"github.com/donovanhide/eventsource"
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
 )
 
 var (
@@ -49,7 +49,7 @@ type CommitteeUpdate struct {
 }
 
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientupdate
 type committeeUpdateJson struct {
 	Version string              `json:"version"`
 	Data    committeeUpdateData `json:"data"`
@@ -195,7 +195,7 @@ func (api *BeaconLightApi) GetBestUpdatesAndCommittees(firstPeriod, count uint64
 // depends on the update chain.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientoptimisticupdate
 func (api *BeaconLightApi) GetOptimisticUpdate() (types.OptimisticUpdate, error) {
 	resp, err := api.httpGet("/eth/v1/beacon/light_client/optimistic_update", nil)
 	if err != nil {
@@ -248,7 +248,7 @@ func decodeOptimisticUpdate(enc []byte) (types.OptimisticUpdate, error) {
 // GetFinalityUpdate fetches the latest available finality update.
 //
 // See data structure definition here:
-// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientfinalityupdate
+// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientfinalityupdate
 func (api *BeaconLightApi) GetFinalityUpdate() (types.FinalityUpdate, error) {
 	resp, err := api.httpGet("/eth/v1/beacon/light_client/finality_update", nil)
 	if err != nil {
@@ -353,7 +353,7 @@ func (api *BeaconLightApi) GetCheckpointData(checkpointHash common.Hash) (*types
 	}
 
 	// See data structure definition here:
-	// https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientbootstrap
+	// https://github.com/DoModond/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md#lightclientbootstrap
 	type bootstrapData struct {
 		Data struct {
 			Header          jsonBeaconHeader               `json:"header"`

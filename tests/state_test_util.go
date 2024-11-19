@@ -25,30 +25,30 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/misc/eip4844"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/state/snapshot"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/triedb"
-	"github.com/ethereum/go-ethereum/triedb/hashdb"
-	"github.com/ethereum/go-ethereum/triedb/pathdb"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common/hexutil"
+	"github.com/DoModond/go-ethereum/common/math"
+	"github.com/DoModond/go-ethereum/consensus/misc/eip4844"
+	"github.com/DoModond/go-ethereum/core"
+	"github.com/DoModond/go-ethereum/core/rawdb"
+	"github.com/DoModond/go-ethereum/core/state"
+	"github.com/DoModond/go-ethereum/core/state/snapshot"
+	"github.com/DoModond/go-ethereum/core/tracing"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/core/vm"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/ethdb"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/triedb"
+	"github.com/DoModond/go-ethereum/triedb/hashdb"
+	"github.com/DoModond/go-ethereum/triedb/pathdb"
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/sha3"
 )
 
 // StateTest checks transaction processing without block context.
-// See https://github.com/ethereum/EIPs/issues/176 for the test format specification.
+// See https://github.com/DoModond/EIPs/issues/176 for the test format specification.
 type StateTest struct {
 	json stJSON
 }
@@ -383,7 +383,7 @@ func (tx *stTransaction) toMessage(ps stPostState, baseFee *big.Int) (*core.Mess
 	dataHex := tx.Data[ps.Indexes.Data]
 	valueHex := tx.Value[ps.Indexes.Value]
 	gasLimit := tx.GasLimit[ps.Indexes.Gas]
-	// Value, Data hex encoding is messy: https://github.com/ethereum/tests/issues/203
+	// Value, Data hex encoding is messy: https://github.com/DoModond/tests/issues/203
 	value := new(big.Int)
 	if valueHex != "0x" {
 		v, ok := math.ParseBig256(valueHex)

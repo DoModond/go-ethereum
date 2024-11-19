@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common"
 	ssz "github.com/ferranbt/fastssz"
 )
 
@@ -49,7 +49,7 @@ func ComputeAccumulator(hashes []common.Hash, tds []*big.Int) (common.Hash, erro
 
 // headerRecord is an individual record for a historical header.
 //
-// See https://github.com/ethereum/portal-network-specs/blob/master/history-network.md#the-header-accumulator
+// See https://github.com/DoModond/portal-network-specs/blob/master/history-network.md#the-header-accumulator
 // for more information.
 type headerRecord struct {
 	Hash            common.Hash

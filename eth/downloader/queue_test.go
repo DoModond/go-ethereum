@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/consensus/ethash"
+	"github.com/DoModond/go-ethereum/core"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/trie"
 )
 
 // makeChain creates a chain of n blocks starting at and including parent.

@@ -20,12 +20,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/triedb/database"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/trie"
+	"github.com/DoModond/go-ethereum/trie/trienode"
+	"github.com/DoModond/go-ethereum/triedb/database"
 )
 
 // context wraps all fields for executing state diffs.

@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/core/rawdb"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/log"
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
 )
 
 // diskLayer is a low level persistent layer built on top of a key-value store.

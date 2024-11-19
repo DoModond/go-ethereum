@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/p2p/dnsdisc"
 	"github.com/cloudflare/cloudflare-go"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/dnsdisc"
 	"github.com/urfave/cli/v2"
 )
 

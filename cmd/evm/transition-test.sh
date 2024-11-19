@@ -504,7 +504,7 @@ type BlockInfo struct {
 The encoding of values for `evm` utility attempts to be relatively flexible. It
 generally supports hex-encoded or decimal-encoded numeric values, and
 hex-encoded byte values (like `common.Address`, `common.Hash`, etc). When in
-doubt, the [`execution-apis`](https://github.com/ethereum/execution-apis) way
+doubt, the [`execution-apis`](https://github.com/DoModond/execution-apis) way
 of encoding should always be accepted.
 
 ## Testing

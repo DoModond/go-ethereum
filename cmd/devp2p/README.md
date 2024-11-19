@@ -135,7 +135,7 @@ The test suite can now be executed using the devp2p tool.
 Repeat the above process (re-initialising the node) in order to run the Eth Protocol test suite again.
 
 
-[eth]: https://github.com/ethereum/devp2p/blob/master/caps/eth.md
+[eth]: https://github.com/DoModond/devp2p/blob/master/caps/eth.md
 [dns-tutorial]: https://geth.ethereum.org/docs/developers/geth-developer/dns-discovery-setup
-[discv4]: https://github.com/ethereum/devp2p/tree/master/discv4.md
-[discv5]: https://github.com/ethereum/devp2p/tree/master/discv5/discv5.md
+[discv4]: https://github.com/DoModond/devp2p/tree/master/discv4.md
+[discv5]: https://github.com/DoModond/devp2p/tree/master/discv5/discv5.md

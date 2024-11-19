@@ -26,17 +26,17 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/era"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/consensus/ethash"
+	"github.com/DoModond/go-ethereum/core"
+	"github.com/DoModond/go-ethereum/core/rawdb"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/core/vm"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/internal/era"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/trie"
+	"github.com/DoModond/go-ethereum/triedb"
 )
 
 var (

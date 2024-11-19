@@ -19,13 +19,13 @@ package state
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie/utils"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/core/stateless"
+	"github.com/DoModond/go-ethereum/core/tracing"
+	"github.com/DoModond/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/trie/utils"
 	"github.com/holiman/uint256"
 )
 

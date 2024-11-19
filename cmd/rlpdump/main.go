@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/rlp"
 )
 
 var (

@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/common/mclock"
+	"github.com/DoModond/go-ethereum/event"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/metrics"
+	"github.com/DoModond/go-ethereum/p2p/enode"
+	"github.com/DoModond/go-ethereum/p2p/enr"
+	"github.com/DoModond/go-ethereum/rlp"
 )
 
 var (

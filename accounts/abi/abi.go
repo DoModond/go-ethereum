@@ -24,8 +24,8 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/crypto"
 )
 
 // The ABI holds information about a contract's context and available

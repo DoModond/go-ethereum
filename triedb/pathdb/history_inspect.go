@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/ethdb"
+	"github.com/DoModond/go-ethereum/log"
 )
 
 // HistoryStats wraps the history inspection statistics.

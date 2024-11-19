@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/core/rawdb"
+	"github.com/DoModond/go-ethereum/ethdb"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/trie/trienode"
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/trienode"
 )
 
 // buffer is a collection of modified states along with the modified trie nodes.

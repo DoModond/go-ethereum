@@ -27,10 +27,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/p2p/enode"
+	"github.com/DoModond/go-ethereum/p2p/enr"
+	"github.com/DoModond/go-ethereum/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

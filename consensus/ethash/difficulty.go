@@ -19,7 +19,7 @@ package ethash
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/DoModond/go-ethereum/core/types"
 	"github.com/holiman/uint256"
 )
 
@@ -81,7 +81,7 @@ func CalcDifficultyFrontierU256(time uint64, parent *types.Header) *big.Int {
 // parent block's time and difficulty. The calculation uses the Homestead rules.
 func CalcDifficultyHomesteadU256(time uint64, parent *types.Header) *big.Int {
 	/*
-		https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.md
+		https://github.com/DoModond/EIPs/blob/master/EIPS/eip-2.md
 		Algorithm:
 		block_diff = pdiff + pdiff / 2048 * max(1 - (time - ptime) / 10, -99) + 2 ^ int((num / 100000) - 2))
 
@@ -137,7 +137,7 @@ func MakeDifficultyCalculatorU256(bombDelay *big.Int) func(time uint64, parent *
 	bombDelayFromParent := bombDelay.Uint64() - 1
 	return func(time uint64, parent *types.Header) *big.Int {
 		/*
-			https://github.com/ethereum/EIPs/issues/100
+			https://github.com/DoModond/EIPs/issues/100
 			pDiff = parent.difficulty
 			BLOCK_DIFF_FACTOR = 9
 			a = pDiff + (pDiff // BLOCK_DIFF_FACTOR) * adj_factor

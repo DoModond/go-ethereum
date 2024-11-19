@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/common"
 )
 
 func TestMemoryCopy(t *testing.T) {

@@ -26,14 +26,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/v4test"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/DoModond/go-ethereum/cmd/devp2p/internal/v4test"
+	"github.com/DoModond/go-ethereum/common"
+	"github.com/DoModond/go-ethereum/crypto"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/p2p/discover"
+	"github.com/DoModond/go-ethereum/p2p/enode"
+	"github.com/DoModond/go-ethereum/params"
+	"github.com/DoModond/go-ethereum/rpc"
 	"github.com/urfave/cli/v2"
 )
 

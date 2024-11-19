@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
+	"github.com/DoModond/go-ethereum/internal/cmdtest"
+	"github.com/DoModond/go-ethereum/internal/reexec"
 )
 
 type testEthkey struct {

@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/version"
+	"github.com/DoModond/go-ethereum/internal/version"
 	"github.com/urfave/cli/v2"
 )
 

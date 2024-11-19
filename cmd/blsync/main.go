@@ -22,13 +22,13 @@ import (
 	"os"
 	"slices"
 
-	"github.com/ethereum/go-ethereum/beacon/blsync"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/DoModond/go-ethereum/beacon/blsync"
+	"github.com/DoModond/go-ethereum/cmd/utils"
+	"github.com/DoModond/go-ethereum/internal/debug"
+	"github.com/DoModond/go-ethereum/internal/flags"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/node"
+	"github.com/DoModond/go-ethereum/rpc"
 	"github.com/urfave/cli/v2"
 )
 

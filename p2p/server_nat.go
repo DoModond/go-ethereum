@@ -20,10 +20,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/p2p/nat"
+	"github.com/DoModond/go-ethereum/common/mclock"
+	"github.com/DoModond/go-ethereum/log"
+	"github.com/DoModond/go-ethereum/p2p/enr"
+	"github.com/DoModond/go-ethereum/p2p/nat"
 )
 
 const (
